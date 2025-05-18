@@ -20,6 +20,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <meta charset='utf-8'>
         <title>PSFree-Lapse Exploit For 9.00</title>
         <style>
+             .image-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;     /* Center vertically */
+      height: 100vh;           /* Full screen height */
+    }
+            
+      
             @font-face {
                 font-family: 'logging';
                 src: url('fonts/LiberationMono-Regular.ttf');
@@ -42,9 +50,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <div style="display: none;">
     This is back text that won’t show.
   </div>
-
+ <div class="image-container">
   <!-- This is shown -->
   <img src="front.jpg" alt="Centered Image">
+</div>
     </body>
     <script src="payload.js"></script>
     <script type='module' src='./alert.mjs'></script>
